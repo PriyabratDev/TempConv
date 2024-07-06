@@ -1,0 +1,20 @@
+->fieldset - legend combo 
+	for box with name on border
+
+->clamp(min,value,max)
+	font size varies from min to max with value
+
+->ways to center:
+    	a.in css parent,
+            	display: flex;
+            	justify-content: center;
+            	align-content: center;
+    	b.in html,
+           	enclose the required data inside <center> tag
+
+->when using another folder
+	start with . (eg: url(./assets/a.jpg)  )
+
+->use transition in original element for sub css(like hover/focus)
+
+->use disabled = 'disabled' in input text html element to only show result

@@ -1,0 +1,6 @@
+1.downloaded favicon svg from "https://fontawesome.com/v5/icons/temperature-high?f=classic&s=solid"  and edited it in inkscape for changing color of original file
+
+2.downloaded background image from "https://www.pling.com/p/1321254"  and edited it in paint for removing some part of the image
+
+3.Imported 'Orbitron' font from Google Fonts 
+

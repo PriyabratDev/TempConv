@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('./assets/bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    padding: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 60%;
+    background: rgba(72, 96, 129, 0.548);
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 15px 3px whitesmoke;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+    flex-wrap: wrap;
+}
+h1{
+    font-family: 'Orbitron','Courier';
+    font-weight: 900;
+    font-size: clamp(20px,6vw,40px);
+    text-align: center;
+    letter-spacing: 1px;
+    color: whitesmoke;
+}
+
+
+/*TEMP INPUT PART*/
+#inp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+/*ENTER TEMP*/
+label {
+    font-family: 'Courier', 'sans-serif';
+    font-size: clamp(20px,6vw,30px);
+    color: whitesmoke;
+    font-weight: 900;
+    margin-bottom: 5px;
+    display: block;  
+    text-align: center;
+    line-height:auto;
+    padding-top: 1%;
+}
+/*TEMPERATURE VALUE PART AND TEMP SCALE*/
+input[type=number] {
+	width: 20%;
+    min-width: 65px;
+    height: 4vh;
+    min-height: 35px;
+	border: 3px dashed #ffffff;
+	border-radius: 20px;
+	text-align: center;
+	color: whitesmoke;
+	appearance: textfield;
+    font-size: medium;
+    background-color: transparent;
+    font-family: 'Arial','Courier', 'sans-serif';
+    font-size: clamp(14px, 4vw, 19px);
+}
+/*TEMP SCALE*/
+select{
+    width: 5vh;
+    height: 4.5vh;
+    min-width: 35px;
+    min-height: 35px;
+	border: 3px solid whitesmoke;
+    border-radius: 50%;
+	text-align: center;
+	color: whitesmoke;
+	appearance: none;
+    font-family: 'Poppins','Arial';
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgba(72, 96, 129, 0.548);
+    transition: 0.2s
+}
+select:hover{
+    color:rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 2px rgb(255, 255, 255);
+    cursor: pointer;
+}
+option{
+    cursor: pointer;
+}
+/*TEMPERATURE OUTPUT CSS*/
+.output{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+.tempinfo{
+    display: flex;
+    width: 3%;
+    height: 6vh;
+    min-width: 145px;
+    min-height: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+    margin: 10px;
+    align-content: center;
+}
+fieldset{
+    padding: 0px;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    border: 3px SOLID #ffffff;
+	border-radius: 20px;
+	text-align: center;
+	color: whitesmoke;
+    font-family: 'Poppins','Arial';
+    margin: 2px;
+}
+legend{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+input[type=text] {
+    flex: 1;
+    margin-left: -100%;
+	width: 100%;
+    height: 100%;
+	border: none;
+	text-align: center;
+	color: whitesmoke;
+    font-family: Poppins,Arial;
+    background-color: transparent;
+    padding-top: 10%;
+}
+
+/*BUTTONS*/
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+button{
+    width: 2.5%;
+    height: 80%;
+    min-width: 145px;
+    min-height: 36px;
+    margin: 5px 10px 5px 10px;
+    background-color:rgb(79, 105, 136);
+    border: none;
+    border-radius: 20px;
+    padding:5px 15px 5px 15px;
+    font-family: Poppins,Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: clamp(10px, 3vw, 18px);;
+    color: rgba(245, 245, 245);
+    transition: 0.3s;
+    border: 3px solid whitesmoke;
+}
+button:hover{
+    color:rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 2px rgb(255, 255, 255);
+    cursor: pointer;
+}
+/*Footer part*/
+.footer-click{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-right: 5px;
+    
+}
+#lfooter{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: whitesmoke;
+    padding: 5px;
+}
+#rfooter{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    font-family: 'courier';
+    font-size: clamp(10px,1.5vw,13px);
+    text-align: right;
+    color: whitesmoke;
+    padding: 5px;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp Conv</title>
+    <link rel="icon" type="image/svg" href="./assets/temp.svg">
+    <link rel="stylesheet" href="temp.css">
+</head>
+<body>
+    <div class="box">
+        <div class="heading">
+            <h1>Temperature Converter</h1></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="box" style="width: 50%;padding: 5%;">
+
+      <div id="inp">
+        <label for="temp">Enter Temperature:</label>
+        
+        <input type="number" id ="inputNum" required>
+        <select name="temp-input" id="tempInput">
+          <option value="C" selected>&degC</option>
+          <option value="F">&degF</option>
+          <option value="K">K</option>
+        </select>
+      </div>
+    <br>
+    <br>
+      <div class="output">
+        <div class="tempinfo">
+          <fieldset>
+            <legend>Celsius</legend>
+          </fieldset>
+          <input type="text" id="cl" disabled="disabled" value="°C">
+        </div>
+      
+        <div class="tempinfo">
+          <fieldset>
+            <legend>Fahrenheit</legend>
+          </fieldset>
+          <input type="text" id="fh" disabled="disabled" value="°F">
+        </div>
+
+        <div class="tempinfo">
+          <fieldset>
+            <legend>Kelvin</legend>
+          </fieldset>
+          <input type="text" id="kv" disabled="disabled" value="K">
+        </div>
+      </div>
+
+
+      <br>
+      <br>
+      <div class="btns">
+        <button id="cnvt">Convert
+        </button>
+        
+        <button id="reset">Reset
+        </button>
+      </div>
+      <br>
+    </div>
+
+    <div id="lfooter">
+        <a href="https://www.instagram.com/captnemo.c/">
+          <div class="footer-click" style="background-image: url('./assets/insta.svg');"></div>
+        </a>
+        <a href="https://www.linkedin.com/in/pok199/">
+          <div class="footer-click" style="background-image: url('./assets/linkedin.svg');"></div>
+        </a>
+        <a href="https://github.com/PriyabratDev">
+          <div class="footer-click" style="background-image: url('./assets/github.svg');"></div>
+        </a>
+    </div>
+    <div id="rfooter">Made with ❤️<br>by Capt_n3m0</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
